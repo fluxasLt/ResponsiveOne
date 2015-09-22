@@ -1,0 +1,57 @@
+/* line 17, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html html, html body, html div, html span, html applet, html object, html iframe,
+html h1, html h2, html h3, html h4, html h5, html h6, html p, html blockquote, html pre,
+html a, html abbr, html acronym, html address, html big, html cite, html code,
+html del, html dfn, html em, html img, html ins, html kbd, html q, html s, html samp,
+html small, html strike, html strong, html sub, html sup, html tt, html var,
+html b, html u, html i, html center,
+html dl, html dt, html dd, html ol, html ul, html li,
+html fieldset, html form, html label, html legend,
+html table, html caption, html tbody, html tfoot, html thead, html tr, html th, html td,
+html article, html aside, html canvas, html details, html embed,
+html figure, html figcaption, html footer, html header, html hgroup,
+html menu, html nav, html output, html ruby, html section, html summary,
+html time, html mark, html audio, html video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+/* line 22, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html html {
+  line-height: 1;
+}
+/* line 24, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html ol, html ul {
+  list-style: none;
+}
+/* line 26, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 28, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html caption, html th, html td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+/* line 30, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html q, html blockquote {
+  quotes: none;
+}
+/* line 103, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html q:before, html q:after, html blockquote:before, html blockquote:after {
+  content: "";
+  content: none;
+}
+/* line 32, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html a img {
+  border: none;
+}
+/* line 116, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html article, html aside, html details, html figcaption, html figure, html footer, html header, html hgroup, html menu, html nav, html section, html summary {
+  display: block;
+}
