@@ -1,4 +1,4 @@
-/* line 17, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html html, html body, html div, html span, html applet, html object, html iframe,
 html h1, html h2, html h3, html h4, html h5, html h6, html p, html blockquote, html pre,
 html a, html abbr, html acronym, html address, html big, html cite, html code,
@@ -19,39 +19,47 @@ html time, html mark, html audio, html video {
   font-size: 100%;
   vertical-align: baseline;
 }
-/* line 22, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html html {
   line-height: 1;
 }
-/* line 24, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html ol, html ul {
   list-style: none;
 }
-/* line 26, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* line 28, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html caption, html th, html td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
-/* line 30, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html q, html blockquote {
   quotes: none;
 }
-/* line 103, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html q:before, html q:after, html blockquote:before, html blockquote:after {
   content: "";
   content: none;
 }
-/* line 32, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html a img {
   border: none;
 }
-/* line 116, c:/program files (x86)/scout/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html article, html aside, html details, html figcaption, html figure, html footer, html header, html hgroup, html menu, html nav, html section, html summary {
+/* line 116, c:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html article, html aside, html details, html figcaption, html figure, html footer, html header, html hgroup, html main, html menu, html nav, html section, html summary {
   display: block;
+}
+
+@media (min-width: 500px) {
+  /* line 9, ../sass/style.scss */
+  body {
+    background: #272A94;
+    margin: 0 auto;
+  }
 }

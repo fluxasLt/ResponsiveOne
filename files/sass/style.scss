@@ -1,6 +1,13 @@
 @import "compass";
+@import "breakpoint";
+
+$min-width: 500px;
 
 html { @include global-reset(); }
 
-
-
+@include breakpoint($min-width) {
+	body {
+		background: #272A94;
+		margin: 0 auto;
+	}
+}
