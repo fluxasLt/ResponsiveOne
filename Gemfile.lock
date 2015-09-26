@@ -25,6 +25,8 @@ GEM
     sass (3.4.18)
     sassy-maps (0.4.0)
       sass (~> 3.3)
+    susy (2.2.6)
+      sass (>= 3.3.0, < 3.5)
 
 PLATFORMS
   x86-mingw32
@@ -33,6 +35,7 @@ DEPENDENCIES
   breakpoint (~> 2.5.0)
   compass (~> 1.1.0.alpha.3)
   sass (~> 3.4.18)
+  susy (~> 2.2.6)
 
 BUNDLED WITH
    1.10.6

@@ -1,13 +1,36 @@
 @import "compass";
 @import "breakpoint";
+@import "susy";
 
 $min-width: 500px;
+$color-one: #DBDCDC;
+$susy: (
+  columns: 12,
+  gutters: 0, 
+);
 
 html { @include global-reset(); }
 
-@include breakpoint($min-width) {
-	body {
-		background: #272A94;
-		margin: 0 auto;
-	}
+body {
+	@include container(100%);
+	background: $color-one;	
+}
+
+#page-content {
+	background: lighten($color-one, 10);
+	max-width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+main#main {
+	background: red;
+	@include span(6 of 12);
+	height: 50px;
+}
+
+aside#aside {
+	background: blue;
+	@include span(6 of 12);
+	height: 50px;
 }
