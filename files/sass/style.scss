@@ -1,36 +1,18 @@
 @import "compass";
+@import "compass/css3/font-face";
 @import "breakpoint";
 @import "susy";
-
-$min-width: 500px;
-$color-one: #DBDCDC;
-$susy: (
-  columns: 12,
-  gutters: 0, 
-);
+@import "variables";
+@import "mixins";
 
 html { @include global-reset(); }
 
 body {
-	@include container(100%);
-	background: $color-one;	
+	@include container(100%);	
 }
 
 #page-content {
-	background: lighten($color-one, 10);
-	max-width: 1200px;
-	height: 100px;
+	max-width: 1280px;
 	margin: 0 auto;
-}
-
-main#main {
-	background: red;
-	@include span(6 of 12);
-	height: 50px;
-}
-
-aside#aside {
-	background: blue;
-	@include span(6 of 12);
-	height: 50px;
+	background: $color-two;
 }
