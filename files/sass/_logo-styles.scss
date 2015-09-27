@@ -1,0 +1,26 @@
+// Variables.
+$logo-breakpoint-one:   max-width 1000px;
+$logo-breakpoint-two:   max-width 630px;
+
+//Styles for logo.
+#logo {
+	@include push(14.25%);
+	@include span(16.5%);
+	padding-top: 1.5rem;
+}
+
+@include breakpoint($logo-breakpoint-one) {
+	#logo {
+		@include push(5%);
+		@include span(25.75%);
+	}
+}
+
+@include breakpoint($logo-breakpoint-two) {
+	#logo {
+		@include push(0%);
+		@include span(100%);
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+}

@@ -1,4 +1,7 @@
 // Global susy settings.
+$susy: (
+	gutters: 0,
+);
 
 // Colors.
 $color-one:   #404040;      // Semi dark gray.
@@ -6,12 +9,13 @@ $color-two:   #d45e5e;     // Dark pink.
 $color-three: #fff;       // White.
 $color-four:  #282828;   // Dark gray.
 $color-five:  #e27878;  // Light pink.
+$color-six:   #dfdfdf; // light gray.
 
 // Settings.
 
 // Fonts.
 @include font-face("BebasNeue", font-files("bebas_neue.ttf", "bebas_neue.otf"));
-@include font-face("HelveticaLT", font-files("helvetica_Light_Normal.ttf", "helveticaLTStd-LightCond.otf"));
+@include font-face("HelveticaLT", font-files("helveticaLTStd-LightCond.otf"));
 @include font-face("Cambria", font-files("com_cambria.ttf"));
 @import url(https://fonts.googleapis.com/css?family=PT+Sans);
 

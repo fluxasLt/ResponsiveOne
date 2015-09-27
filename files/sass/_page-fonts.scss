@@ -1,0 +1,63 @@
+#page-content {
+	font-size: 15px; 
+	font-family: sans-serif;
+}
+
+#main-logo-text, 
+#secondary-logo-text, 
+#main-navigation ul li a, 
+#header-text {
+	color: $color-one;
+}
+
+#main-navigation ul li a:hover,
+#skills-header,
+#copyright-information, 
+#resume-text, 
+#freelancer-location, 
+#skills-list, 
+#freelancer-name {
+	color: $color-three;	
+}
+
+#secondary-logo-text {
+	font: 0.9rem "Arial";
+}
+
+#quotes {
+	font: 6.3rem "Arial Black";
+	color: $color-six;
+}
+
+#main-logo-text {
+	font: 2.3rem "BebasNeue";
+}
+
+#main-navigation ul li a {
+	font-family: "HelveticaLT";
+	text-decoration: none;
+}
+
+#header-text, #gallery-header {
+	font: 1.1rem italic "Cambria";
+}
+
+#skills-header {
+	font: 1.5rem "Cambria";
+}
+
+#copyright-information, #resume-text, #freelancer-location,  {
+	font: 0.8rem "PT Sans";
+}
+
+#skills-list {
+	font: 1.2rem "PT Sans";
+}
+
+#freelancer-name {
+	font: 1.1rem italic "Cambria";
+}
+
+
+
+

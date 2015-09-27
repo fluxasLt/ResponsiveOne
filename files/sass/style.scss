@@ -1,9 +1,15 @@
 @import "compass";
 @import "compass/css3/font-face";
+@import "compass/css3/transition";
 @import "breakpoint";
 @import "susy";
 @import "variables";
 @import "mixins";
+@import "page-fonts";
+@import "logo-styles";
+@import "navigation-styles";
+
+// Main styles.
 
 html { @include global-reset(); }
 
@@ -14,5 +20,14 @@ body {
 #page-content {
 	max-width: 1280px;
 	margin: 0 auto;
-	background: $color-two;
 }
+
+#main-header {
+	@include span(12 of 12);
+}
+
+#main-content, #bio-section, footer {
+	@include span(12 of 12);
+}
+
+
