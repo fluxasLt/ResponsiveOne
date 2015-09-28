@@ -9,6 +9,8 @@
 @import "logo-styles";
 @import "main-navigation-styles";
 @import "main-header-styles";
+@import "main-content-styles";
+@import "gallery-styles";
 
 // Main styles.
 
@@ -23,13 +25,8 @@ body {
 	margin: 0 auto;
 }
 
-#main-content, #bio-section, footer {
+#bio-section, footer {
 	@include span(12 of 12);
-}
-
-#gallery li img {
-	display: inline-block;
-	@include span(3 of 12);
 }
 
 

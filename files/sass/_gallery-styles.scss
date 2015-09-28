@@ -1,0 +1,47 @@
+// Variables.
+$gallery-breakpoint-one:   max-width 900px;
+$gallery-breakpoint-two:   max-width 700px;
+$gallery-breakpoint-three: max-width 400px;
+
+// Styles for gallery.
+#gallery-header {
+	@include span(100%);
+	padding-top: 1rem;
+}
+
+#gallery {
+	margin-top: 2rem;
+	@include span(100%);	
+}
+
+#gallery ul li {
+	@include gallery(3 of 12 1.5);
+	margin-bottom: 5%;
+	img {
+		@include span(100%);
+	}
+}
+
+#gallery ul li img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+@include breakpoint($gallery-breakpoint-one) {
+	#gallery ul li {
+		@include gallery(4 of 12 1.5);
+	}
+}
+
+@include breakpoint($gallery-breakpoint-two) {
+	#gallery ul li {
+		@include gallery(6 of 12 1.5);
+	}
+}
+
+@include breakpoint($gallery-breakpoint-three) {
+	#gallery ul li {
+		@include gallery(11.999 of 12);
+		margin-bottom: 10%;
+	}
+}
