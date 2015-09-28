@@ -2,7 +2,7 @@
 $logo-breakpoint-one:   max-width 1000px;
 $logo-breakpoint-two:   max-width 630px;
 
-//Styles for logo.
+// Styles for logo.
 #logo {
 	@include push(14.25%);
 	@include span(16.5%);

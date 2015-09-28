@@ -1,0 +1,51 @@
+// Variables.
+$navigation-breakpoint-one:   max-width 1000px;
+$navigation-breakpoint-two:   max-width 630px;
+$navigation-breakpoint-three: max-width 400px;
+
+// Styles for main-navigation.
+#main-navigation {
+	@include push(15%);
+	@include span(40%);
+	ul li {
+		padding-top: 2.8rem; 
+		padding-bottom: 1rem;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		text-align: center;
+		@include span(20%);
+		@include transition(all 0.3s ease);
+		&:hover {
+			background: $color-two;
+			a { 
+				color: $color-three; 
+			}
+			cursor: pointer;	
+		}
+	}
+}
+
+@include breakpoint($navigation-breakpoint-one) {
+	#main-navigation {
+		@include push(15%);
+		@include span(49.25%);
+	}	
+}
+
+@include breakpoint($navigation-breakpoint-two) {
+	#main-navigation {
+		@include push(0%);
+		@include span(100%);
+		ul li {
+			padding-top: 1rem; 
+		}
+	}	
+}
+
+@include breakpoint($navigation-breakpoint-three) {
+	#main-navigation {
+		ul li {
+			@include span(95%); 
+		}
+	}	
+}
