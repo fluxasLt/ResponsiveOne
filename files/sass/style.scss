@@ -11,22 +11,18 @@
 @import "main-header-styles";
 @import "main-content-styles";
 @import "gallery-styles";
+@import "bio-section-styles";
+@import "footer-styles";
 
 // Main styles.
 
 html { @include global-reset(); }
 
-body {
-	@include container(100%);	
-}
+body { @include container(100%); }
 
 #page-content {
-	max-width: 1280px;
+	@include span(100%);
 	margin: 0 auto;
-}
-
-#bio-section, footer {
-	@include span(12 of 12);
 }
 
 

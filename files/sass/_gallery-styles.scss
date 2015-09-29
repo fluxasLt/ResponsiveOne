@@ -1,7 +1,7 @@
 // Variables.
 $gallery-breakpoint-one:   max-width 900px;
-$gallery-breakpoint-two:   max-width 700px;
-$gallery-breakpoint-three: max-width 400px;
+$gallery-breakpoint-two:   max-width 600px;
+$gallery-breakpoint-three: max-width 300px;
 
 // Styles for gallery.
 #gallery-header {
@@ -11,6 +11,7 @@ $gallery-breakpoint-three: max-width 400px;
 
 #gallery {
 	margin-top: 2rem;
+	margin-bottom: 5rem;
 	@include span(100%);	
 }
 

@@ -1,5 +1,6 @@
 // Variables.
-$main-content-breakpoint-one:   max-width 1150px;
+$main-content-breakpoint-one: max-width 1150px;
+$main-content-breakpoint-two: max-width 300px;
 
 // Styles for main-content.
 #main-content {
@@ -11,5 +12,12 @@ $main-content-breakpoint-one:   max-width 1150px;
 	#main-content {
 		@include push(5%);
 		@include span(90%);
+	}
+}
+
+@include breakpoint($main-content-breakpoint-two) {
+	#main-content {
+		@include push(15%);
+		@include span(70%);
 	}
 }

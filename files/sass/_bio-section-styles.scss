@@ -1,0 +1,108 @@
+// Variables.
+$bio-section-one:   max-width 1150px;
+$bio-section-two:   max-width 850px;
+$bio-section-three: max-width 580px;
+$bio-section-four:  max-width 400px;
+
+// Styles for bio-section.
+#bio-section {
+	@include span(100%);
+	background: $color-two;
+}
+
+#about-me-section {
+	@include push(20%);
+	@include span(45%);
+	@include gutters(3%);
+	#freelancer-photo img {
+		@include span(20%);
+		margin-top: -3.5rem;
+		border: 0.5rem white solid;
+		min-width: 100px;
+	}
+	#freelancer-information {
+		@include push(3%);
+		@include span(30%);
+		padding-top: 1rem;
+	}
+	#social-media {
+		@include push(20%);
+		@include span(20%);
+		padding-top: 1.5rem;
+		& img:hover {
+			opacity: 0.8;
+		}
+		#twitter-icon {
+			padding-right: 5%;
+		}
+	}
+	#resume {
+		@include span(100%);
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+#skills-section {
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	#skills-header {
+		padding-bottom: 1rem;
+	}
+}
+
+@include breakpoint($bio-section-one) {
+	#about-me-section {
+		@include push(5%);
+		@include span(60%);
+	}
+}
+
+@include breakpoint($bio-section-two) {
+	#about-me-section {
+		@include span(90%);
+	}
+	#skills-section {
+		@include push(5%);
+	}
+}
+
+@include breakpoint($bio-section-three) {
+	#about-me-section {
+		#freelancer-photo img {
+			@include push(27.5%);
+			@include span(40%);
+		}
+		#freelancer-information {
+			@include span(50%);
+			padding-top: 2rem;
+		}
+		#social-media {
+			@include push(15%);
+			@include span(30%);
+			padding-top: 2rem;
+		}
+	}
+}
+
+
+@include breakpoint($bio-section-four) {
+	#about-me-section {
+		#freelancer-information {
+			@include span(95%);
+			text-align: center;
+		}
+		#social-media {
+			@include push(30%);
+			@include span(40%);
+			img {
+				@include span(45%);
+			}
+
+		}
+		#resume {
+			@include span(100%);
+			margin-top: 1rem;
+		}
+	}
+}

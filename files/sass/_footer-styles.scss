@@ -1,0 +1,18 @@
+// Variables.
+$footer-one:  max-width 400px;
+
+// Styles for footer.
+footer {
+	@include span(100%);
+	background: $color-four;
+	text-align: right;
+		#copyright-information {
+		padding: 0.5rem;
+	}
+}
+
+@include breakpoint($footer-one) {
+	footer {
+		text-align: center;
+	}
+}
