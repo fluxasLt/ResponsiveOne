@@ -5,6 +5,16 @@ $navigation-breakpoint-three: max-width 400px;
 
 // Styles for main-navigation.
 #main-navigation {
+	#burger-icon {
+		@include span(95%);
+		margin: 0.5rem;
+		display: none;
+		img {
+			max-width: 45px;
+			@include push(85%);
+			@include span(15%);
+		}
+	}
 	@include push(15%);
 	@include span(40%);
 	ul li {
@@ -44,6 +54,9 @@ $navigation-breakpoint-three: max-width 400px;
 
 @include breakpoint($navigation-breakpoint-three) {
 	#main-navigation {
+		#burger-icon {
+			display: block;
+		}
 		ul li {
 			@include span(95%); 
 		}

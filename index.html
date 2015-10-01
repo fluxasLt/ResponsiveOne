@@ -4,7 +4,13 @@
 	<title>Responsive - Website I</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<link rel="stylesheet" href="files/css/style.css">
+	<script src="files/javascript/jquery-2.1.4.min.js"></script>
+	<script src="files/javascript/script.js"></script>
+	<script src="files/javascript/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -16,6 +22,7 @@
 		</div>
 
 		<nav id="main-navigation">
+			<div id="burger-icon"><img src="images/large-version/burger-icon-closed.png" alt="burger icon"></div>
 			<ul>
 				<li><a href="#">HOME</a></li>
 				<li><a href="#">ABOUT ME</a></li>
@@ -77,10 +84,10 @@
 			<div id="skills-section">
 				<h2 id="skills-header">My Skills</h2>
 				<ul id="skills-list">
-					<span>Ps</span><li></li>
-					<span>Ai</span><li></li>
-					<span>Bs</span><li></li>
-					<span>Cs</span><li></li>
+					<li><span>Ps</span></li>
+					<li><span>Ai</span></li>
+					<li><span>Bs</span></li>
+					<li><span>Cs</span></li>
 				</ul>
 			</div>
 
@@ -88,7 +95,7 @@
 
 		<footer>
 			<div id="copyright-information">
-				<span id="copyright-information">Copyright © 2012 Css Author</span>
+				<span>Copyright © 2012 Css Author</span>
 			</div>
 		</footer>
 
