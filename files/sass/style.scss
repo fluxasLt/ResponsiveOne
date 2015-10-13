@@ -25,4 +25,16 @@ body { @include container(100%); }
 	margin: 0 auto;
 }
 
+.gallery-preview {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(#000000, 0.5);
+}
+
+.image-preview {
+	position: relative;
+	border: 8px solid white; 
+	cursor: pointer;
+}
 
