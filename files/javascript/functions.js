@@ -33,17 +33,25 @@ function centerImage() {
 
 function closeGallery() {
     $(".gallery-preview").click(function() {
+        event.preventDefault();
         $(this).hide("fade", { direction: "down"}, 500, function() { $(this).remove() })
     });
 }
 
 function previewGallery() {
     $("#gallery img").click(function() {
+        event.preventDefault();
         var gallery = $('<div class = "gallery-preview" style="display: none;"><img src=' + $(this).attr("src") + "></div>");
         $("#page-content").append(gallery);
         $(".gallery-preview").show("fade", { direction: "down" }, 500);
         centerImage();
         closeGallery()
+    });
+     $("#gallery img").mouseover(function() {
+        $(this).css("opacity", 0.5);
+    });
+    $("#gallery img").mouseleave(function() {
+        $(this).css("opacity", 1);
     });
 }
 

@@ -23,11 +23,6 @@ $gallery-breakpoint-three: max-width 300px;
 	}
 }
 
-#gallery ul li img:hover {
-	opacity: 0.5;
-	cursor: pointer;
-}
-
 @include breakpoint($gallery-breakpoint-one) {
 	#gallery ul li {
 		@include gallery(4 of 12 1.5);
