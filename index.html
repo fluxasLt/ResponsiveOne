@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Responsive - Website I</title>
 	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/png" href="images/large-version/favicon.png"/>
+	<title>Responsive - Website I</title>
+	<meta name="description" content="This is a training site, created to improve development skills related to HTML, JS, CSS, SASS and SEO. Its main purpose is for learning and experience.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -17,9 +19,9 @@
 
 	<div id="page-content">
 
-		<div id="logo">
-			<span id="main-logo-text">Webfolio</span><br/>
-			<span id="secondary-logo-text">My Web Design Portfolio</span>	
+		<div id="logo" itemscope itemtype="http://schema.org/Brand">
+			<span id="main-logo-text" itemprop="name">Webfolio</span><br/>
+			<span id="secondary-logo-text" itemprop="description">My Web Design Portfolio</span>	
 		</div>
 
 		<nav id="main-navigation">
@@ -42,45 +44,95 @@
 			<h1 id="gallery-header">Portfolio</h1>
 			<div id="gallery">
 				<ul>
-					<li><img src="images/large-version/image-1.png" alt=""></li>
-					<li><img src="images/large-version/image-2.png" alt=""></li>
-					<li><img src="images/large-version/image-3.png" alt=""></li>
-					<li><img src="images/large-version/image-4.png" alt=""></li>
-					<li><img src="images/large-version/image-5.png" alt=""></li>
-					<li><img src="images/large-version/image-6.png" alt=""></li>
-					<li><img src="images/large-version/image-7.png" alt=""></li>
-					<li><img src="images/large-version/image-8.png" alt=""></li>
-					<li><img src="images/large-version/image-9.png" alt=""></li>
-					<li><img src="images/large-version/image-10.png" alt=""></li>
-					<li><img src="images/large-version/image-11.png" alt=""></li>
-					<li><img src="images/large-version/image-12.png" alt=""></li>
-					<li><img src="images/large-version/image-1.png" alt=""></li>
-					<li><img src="images/large-version/image-2.png" alt=""></li>
-					<li><img src="images/large-version/image-3.png" alt=""></li>
-					<li><img src="images/large-version/image-4.png" alt=""></li>
-					<li><img src="images/large-version/image-5.png" alt=""></li>
-					<li><img src="images/large-version/image-6.png" alt=""></li>
-					<li><img src="images/large-version/image-7.png" alt=""></li>
-					<li><img src="images/large-version/image-8.png" alt=""></li>
-					<li><img src="images/large-version/image-9.png" alt=""></li>
-					<li><img src="images/large-version/image-10.png" alt=""></li>
-					<li><img src="images/large-version/image-11.png" alt=""></li>
-					<li><img src="images/large-version/image-12.png" alt=""></li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-1.png" alt="artwork number one" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-2.png" alt="artwork number two" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-3.png" alt="artwork number three" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-4.png" alt="artwork number four" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-5.png" alt="artwork number five" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-6.png" alt="artwork number six" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-7.png" alt="artwork number seven" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-8.png" alt="artwork number eight" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-9.png" alt="artwork number nine" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-10.png" alt="artwork number ten" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-11.png" alt="artwork number eleven" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-12.png" alt="artwork number twelve" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-1.png" alt="artwork number thirteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-2.png" alt="artwork number fourteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-3.png" alt="artwork number fifteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-4.png" alt="artwork number sixteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-5.png" alt="artwork number seventeen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-6.png" alt="artwork number eighteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-7.png" alt="artwork number nineteen" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-8.png" alt="artwork number twenty" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-9.png" alt="artwork number twenty-one" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-10.png" alt="artwork number twenty-two" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-11.png" alt="artwork number twenty-three" itemprop="thumbnail">
+					</li>
+					<li itemscope itemtype="http://schema.org/ImageObject">
+						<img src="images/large-version/image-12.png" alt="artwork number twenty-four" itemprop="thumbnail">
+					</li>
 				</ul>
 			</div>
-
 		</main>
 
-		<section id="bio-section">
+		<section id="bio-section" itemscope itemtype="http://schema.org/Person">
 
 			<div id="about-me-section">
 
-				<div id="freelancer-photo"><img src="images/large-version/freelancer-photo.png" alt="freelancer photo"></div>
+				<div id="freelancer-photo">
+					<img src="images/large-version/freelancer-photo.png" alt="freelancer photo" itemprop="image">
+				</div>
 
 				<div id="freelancer-information">
-					<span id="freelancer-name">Lorem Ipsum</span><br/>
-					<span id="freelancer-location">
-						<img src="images/large-version/location-icon.png" alt=""> Kaunas, Lithuania
+					<span id="freelancer-name" itemprop="name">John Magaiver</span><br/>
+					<span id="freelancer-location" itemscope itemtype="http://schema.org/PostalAddress">
+						<img src="images/large-version/location-icon.png" alt="location cursor"> 
+						<span itemprop="addressLocality">Kaunas, Lithuania</span>
 					</span>
 				</div>
 
@@ -90,7 +142,10 @@
 				</div>
 
 				<div id="resume">
-					<span id="resume-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+					<span id="resume-text">
+					<h1>Main header of the page - one per section or so</h1></br>
+					<h2>This is secondary header, not as important as header one</h2> 
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
 				</div>	
 			</div>
 
@@ -106,9 +161,11 @@
 
 		</section>
 
-		<footer>
+		<footer itemscope itemtype="http://schema.org/WPFooter">
 			<div id="copyright-information">
-				<span>Copyright © 2012 Css Author</span>
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					Copyright © 2012 Css <span itemprop="givenName">John</span>
+				</span>
 			</div>
 		</footer>
 
