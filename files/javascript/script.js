@@ -6,7 +6,9 @@ $(document).ready(function() {
 		centerImage();            // Center image.
 		
 	});
-    burgerMenuClick(); // Burger menu clicking.
-    previewGallery(); // Preview image.
+    burgerMenuClick();   // Burger menu clicking.
+    previewGallery();   // Preview image.
+    scrollToSection(); // Smooth scroll then clicked on nav link.
+    makeSkillsBars(); // Makes skills bars.
     
 });

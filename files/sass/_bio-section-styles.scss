@@ -44,10 +44,25 @@ $bio-section-four:  max-width 400px;
 }
 
 #skills-section {
+	@include span(12%);
 	margin-top: 4rem;
 	margin-bottom: 2rem;
 	#skills-header {
 		padding-bottom: 1rem;
+	}
+	li {
+	@include span(100%);
+		span {
+			display: block;
+			@include span(20%);	
+		}
+		div {
+			@include span(80%);
+			background: $color-five;
+		}
+		.skill {
+			background: $color-four;
+		}	
 	}
 }
 
@@ -56,6 +71,9 @@ $bio-section-four:  max-width 400px;
 		@include push(5%);
 		@include span(60%);
 	}
+	#skills-section {
+		@include span(27%);
+	}
 }
 
 @include breakpoint($bio-section-two) {
@@ -63,7 +81,9 @@ $bio-section-four:  max-width 400px;
 		@include span(90%);
 	}
 	#skills-section {
+		margin-top: 0;
 		@include push(5%);
+		@include span(90%);
 	}
 }
 

@@ -55,3 +55,26 @@ function previewGallery() {
     });
 }
 
+function scrollToSection() {
+    $("#main-navigation li").click(function() {
+        var scrollTarget = $(this).children().attr("href");
+        $("html, body").animate({scrollTop: $(scrollTarget).offset().top}, 500);
+        return false
+    });
+    $("#social-media a").click(function() {
+        var scrollTarget = $(this).children().attr("href");
+        $("html, body").animate({scrollTop: 0}, 500);
+        return false
+    });
+}
+
+function makeSkillsBars() {
+    var barHeight = $("#skills-list span").height();
+    $("#skills-list div").css({height: barHeight * .6, "margin-top": barHeight * .3});
+    $("#skills-list div").append('<div class="skill"></div>');
+    $("#skills-list div div").css({height: barHeight * .6});
+    $("#skills-list div div").each(function(index, value) {
+        $(this).animate({
+            width: Math.floor(Math.random() * 100)}, 500)
+    });
+}
